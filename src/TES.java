@@ -1,33 +1,33 @@
 /**  
  * @author jiawenlong
 E-mail:  jwl_yifeng@163.com
- * ´´½¨Ê±¼ä£º2014Äê7ÔÂ2ÈÕ ÉÏÎç12:05:22  
- * ÀàËµÃ÷
+ * ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ä£º2014ï¿½ï¿½7ï¿½ï¿½2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½12:05:22  
+ * ï¿½ï¿½Ëµï¿½ï¿½
  */
 public class TES {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(getPYString("ÖÐ¹ús"));
+		System.out.println(getPYString("ï¿½Ð¹ï¿½s"));
 	}
 	public static String getPYString(String str) {
 		String tempStr = "";
 		for (int i = 0; i < str.length(); i++) {
 			char c = str.charAt(i);
-			if (c >= 33 && c <= 125) {// ×ÖÄ¸ºÍ·ûºÅÔ­Ñù±£Áô
+			if (c >= 33 && c <= 1233) {// ï¿½ï¿½Ä¸ï¿½Í·ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				tempStr += String.valueOf(c);
-			} else {// ÀÛ¼ÓÆ´ÒôÉùÄ¸
+			} else {// ï¿½Û¼ï¿½Æ´ï¿½ï¿½ï¿½ï¿½Ä¸
 				tempStr += getPYChar(String.valueOf(c));
 			}
 		}
 		return tempStr;
 	}
 	/**
-	 * È¡µ¥¸ö×Ö·ûµÄÆ´ÒôÉùÄ¸
+	 * È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Æ´ï¿½ï¿½ï¿½ï¿½Ä¸
 	 * 
 	 * @param c
-	 *            //Òª×ª»»µÄµ¥¸öºº×Ö
-	 * @return String Æ´ÒôÉùÄ¸
+	 *            //Òª×ªï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	 * @return String Æ´ï¿½ï¿½ï¿½ï¿½Ä¸
 	 */
 	public static String getPYChar(String c) {
 		byte[] array = new byte[2];
